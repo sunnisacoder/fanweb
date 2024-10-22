@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./allReset.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./loading.css">
+    <!-- jsCss -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logoBox">
+            <a id="logo">FAN</a>
+        </div>
+
+        <div class="leftHeader">
+            <div class="quoteBox">
+                <p>寫扣就是
+                    <span class="typedText"></span>
+                    <span class="entering">&nbsp;</span>
+                </p>
+            </div>
+            <div class="hamburger">
+                <span class="bar-1"></span>
+                <span class="bar-2"></span>
+                <span class="bar-3"></span>
+            </div>
+        </div>
+
+        <div class="smBox">
+            <a href="https://github.com/sunnisacoder" target="_blank"><img src="./image/github.png"></a>
+            <a href="https://www.cake.me/s--nhlzTMUkyVt4jZxloSzhNw--/funsunny1107" target="_blank"><img
+                    src="./image/resume.svg"></a>
+            <a href="https://www.instagram.com/fan_ching_?igsh=ajI0N3Nkcm5xbTg5&utm_source=qr" target="_blank"><img
+                    src="./image/ig.png"></a>
+        </div>
+
+        <div class="navMenu" id="navMenu">
+            <ul>
+                <li data-id="0"><a id="about">關於我</a></li>
+                <li data-id="1"><a id="works">作品們</a></li>
+                <li><a href="https://sunnisacoder.github.io/havefan/" target="_blank"> To Have Fan 餐車網站 ↗</a></li>
+                <li><a href="https://sunnisacoder.github.io/havefan/onlineOrder.html" target="_blank">拼圖小遊戲 ↗</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 行動裝置 -->
+        <div class="mobileNav" id="mobileNav">
+            <ul>
+                <li data-id="0"><a id="about">關於我</a></li>
+                <li data-id="1"><a id="works">作品們</a></li>
+                <li><a href="https://sunnisacoder.github.io/havefan/" target="_blank"> To Have Fan 餐車網站 ↗</a></li>
+                <li><a href="https://sunnisacoder.github.io/havefan/onlineOrder.html" target="_blank">拼圖小遊戲 ↗</a>
+                </li>
+                <li><a href="https://github.com/sunnisacoder" target="_blank">Github</a></li>
+                <li><a href="https://www.cake.me/s--nhlzTMUkyVt4jZxloSzhNw--/funsunny1107" target="_blank">Resume</a></li>
+            </ul>
+        </div>
+        <!-- 行動裝置 -->
+    </header>
+
+    <main class="mainArea">
+        <!-- banner -->
+        <div class="bannerArea">
+            <canvas class="starryCanvas"></canvas>
+            <button class="darkModeToggle ld ld-shake-v">SWITCH</button>
+            <div class="title">FAN WORLD</div>
+        </div>
+        <!-- banner -->
+
+        <!-- 關於我 -->
+        <div class="shared aboutArea hide" data-id="0" id="aboutArea">
+            <div class="wrap">
+                <div id="container">
+                    <div id="left" href="#">
+                        <span>INFO</span>
+                        <div class="shared infoContent">
+                            <div class="imgBox">
+                                <img src="./image/myself.png">
+                            </div>
+                            <div class="textBox">
+                                <div class="fullName">
+                                    Fan Hui Ching 范惠晴
+                                </div>
+                                <div class="job">
+                                    前端工程師
+                                </div>
+                                <div class="intro">
+                                    您好，我擁有一年網站企劃／客服經驗，我具備良好溝通能力、問題解決能力、跨部門合作能力，執行超過上百位客戶的網站版面、功能修改，完整呈現客戶需求。除了培養出我優秀設計美感及
+                                    UX 規劃能力，也燃起我對前端學習的熱情。我相信我在前端工程師就業養成班所學的技術，能夠創造出良好使用者體驗的網站和功能，並持續在此領域中保持積極學習新事物的心。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="right" href="#">
+                        <span>EXPERIENCE</span>
+                        <div class="shared experContent">
+                            <div class="wrapper">
+                                <div class="timelineBox">
+                                    <!-- 前端學習 -->
+                                    <div class="timelineHeader">
+                                        <h3>前端學習</h3>
+                                        <span>Front-end Learning Process<span>
+                                    </div>
+                                    <div class="timelineBody">
+                                        <ul class="timeline">
+                                            <li>
+                                                <div class="timelineDot"></div>
+                                                <div class="timelineDate">2024.04 ~ 2024.08</div>
+                                                <div class="timelineWork">前端工程師就業養成班<small>iSpan資展國際股份有限公司</small></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- 工作經歷 -->
+                                    <div class="timelineHeader">
+                                        <h3>工作經歷</h3>
+                                        <span>WORK EXPERIENCE</span>
+                                    </div>
+                                    <div class="timelineBody">
+                                        <ul class="timeline">
+                                            <li>
+                                                <div class="timelineDot"></div>
+                                                <div class="timelineDate">2023.03 ~ 2024.02</div>
+                                                <div class="timelineWork">網站企劃／客服／影片剪輯<small>愛貝斯網路有限公司</small></div>
+                                            </li>
+                                            <li>
+                                                <div class="timelineDot"></div>
+                                                <div class="timelineDate">2022.07 ~ 2022.11</div>
+                                                <div class="timelineWork">國貿業務<small>弘展切削工具有限公司</small></div>
+                                            </li>
+                                            <li>
+                                                <div class="timelineDot"></div>
+                                                <div class="timelineDate">2020.02 ~ 2021.01</div>
+                                                <div class="timelineWork">職場英文教學助理<small>國立雲林科技大學語言中心</small></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- 教育程度 -->
+                                    <div class="timelineHeader">
+                                        <h3>教育程度</h3>
+                                        <span>education</span>
+                                    </div>
+                                    <div class="timelineBody">
+                                        <ul class="timeline">
+                                            <li>
+                                                <div class="timelineDot"></div>
+                                                <div class="timelineDate">2018.09 ~ 2022.06</div>
+                                                <div class="timelineWork">國立雲林科技大學 應用外語系</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 關於我 -->
+
+        <!-- 作品們 -->
+        <div class="shared worksArea hide" data-id="1">
+            <div class="wrap">
+                <div class="timeline-carousel">
+                    <!-- 手機版scrool down 1180以下才會出現-->
+                    <div class="scroolDown" style="animation-duration:2.0s">SCROOL DOWN ⮕</div>
+                    <!-- 手機版scrool down -->
+                    <div class="timeline-carousel_item-wrapper" data-js="timeline-carousel">
+
+                        <!--Timeline item-->
+                        <div class="timeline-carousel_item">
+                            <div class="timeline-carousel_image">
+                                <div>
+                                    <img src="./image/jpFigma.png">
+                                </div>
+                            </div>
+                            <div class="timeline-carousel_item-inner">
+                                <div class="nameBox">
+                                    <div class="workName">Figma 設計稿</div>
+                                    <a href="https://www.figma.com/design/9Ug50iWCyHfwK7lgfqPiVv/8_%E8%8C%83%E6%83%A0%E6%99%B4?node-id=157-1378&t=83rYyKU06Ti2au7z-1"
+                                        class="seeMore2" target="_blank"> SEE MORE <div class="arrow ld ld-wander-h"> ▶
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="workDes">
+                                    分析日本購物網站架構，製作電腦版以及行動裝置版之網站設計稿，運用 Prototype 製作區塊元件，並完成互動式動態效果。
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item-->
+
+                        <!--Timeline item-->
+                        <div class="timeline-carousel_item">
+                            <div class="timeline-carousel_image">
+                                <div class="media-wrapper">
+                                    <img src="./image/haveFan.jpg">
+                                </div>
+                            </div>
+                            <div class="timeline-carousel_item-inner">
+                                <div class="nameBox">
+                                    <div class="workName">餐車品牌網站</div>
+                                    <a href="https://sunnisacoder.github.io/havefan/" class="seeMore2"
+                                        target="_blank">SEE MORE <div class="arrow ld ld-wander-h"> ▶ </div>
+                                    </a>
+                                </div>
+                                <div class="workDes">
+                                    車飯樂為一個虛擬餐車品牌，網站視覺風格以像素 Pixel 風格為主，採用明亮黃色為品牌識別色。使用
+                                    HTML、CSS、JavaScript 製作而成，為全手刻的 RWD 網站。
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item-->
+
+                        <!--Timeline item-->
+                        <div class="timeline-carousel_item">
+                            <div class="timeline-carousel_image">
+                                <div class="media-wrapper">
+                                    <img src="./image/littleGame.avif">
+                                </div>
+                            </div>
+                            <div class="timeline-carousel_item-inner">
+                                <div class="nameBox">
+                                    <div class="workName">拼圖小遊戲</div>
+                                    <a href="https://sunnisacoder.github.io/havefan/onlineOrder.html" class="seeMore2"
+                                        target="_blank">SEE MORE<div class="arrow ld ld-wander-h"> ▶ </div></a>
+                                </div>
+                                <div class="workDes">
+                                    便當拼圖靈感來自於 Line 組合貼圖透過滑鼠拖曳<br>可將右側配菜移至左側便當盒中，客製出屬於自己的便當配菜
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item-->
+
+                        <!--Timeline item-->
+                        <div class="timeline-carousel_item">
+                            <div class="timeline-carousel_image">
+                                <div>
+                                    <img src="./image/islEnigmaFigma.png">
+                                </div>
+                            </div>
+                            <div class="timeline-carousel_item-inner">
+                                <div class="nameBox">
+                                    <div class="workName">Figma 設計稿</div>
+                                    <a href="https://www.figma.com/design/ADCzw5GskBfnzy4Z4kPz8F/%E8%AC%8E%E6%A8%A3%E5%B3%B6%E5%B6%BC-islEnigma?node-id=586-418&node-type=canvas&t=sbWdcSoLx2FsuvcN-0"
+                                        class="seeMore2" target="_blank"> SEE MORE <div class="arrow ld ld-wander-h"> ▶
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="workDes">
+                                    謎樣島嶼 islEnigma 為虛擬海島型遊樂園，網站風格走向為迷幻感，色系則以藍紫漸層色為主。
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item-->
+
+                        <!--Timeline item-->
+                        <div class="timeline-carousel_item">
+                            <div class="timeline-carousel_image">
+                                <div class="media-wrapper">
+                                    <img src="./image/islEnigma.jpg">
+                                </div>
+                            </div>
+                            <div class="timeline-carousel_item-inner">
+                                <div class="nameBox">
+                                    <div class="workName">遊樂園網站設計</div>
+                                    <a href="https://www.canva.com/design/DAGUMe6sEFg/GxE9-Sm9MfyR4bP_dcnsDw/view?utm_content=DAGUMe6sEFg&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                                        class="seeMore2" target="_blank">SEE MORE<div class="arrow ld ld-wander-h"> ▶
+                                        </div></a>
+                                </div>
+                                <div class="workDes">
+                                    在「謎樣島嶼 islEnigma 」專案中，我們組別除了使用 HTML、SCSS、JavaScript 、jQuery、Bootstrap 網格，更結合 React
+                                    框架製作網站單元的共同元件。
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item-->
+
+                        <!--Timeline item-->
+                        <div class="timeline-carousel_item">
+                            <div class="timeline-carousel_image">
+                                <div class="media-wrapper">
+                                    <img src="./image/todolist.png">
+                                </div>
+                            </div>
+                            <div class="timeline-carousel_item-inner">
+                                <div class="nameBox">
+                                    <div class="workName">To-Do List 功能</div>
+                                    <a href="https://sunnisacoder.github.io/fans-to-do-list/" class="seeMore2"
+                                        target="_blank">SEE MORE<div class="arrow ld ld-wander-h"> ▶ </div></a>
+                                </div>
+                                <div class="workDes">
+                                    自己習慣用便條紙寫每日代辦事項，但自己寫一個小功能也完全沒問題！
+                                    <li>練習將資料存在 local storage</li>
+                                    <li>使用 tiny date picker 日曆顯示當日日期</li>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item-->
+
+                        <!--Timeline item-->
+                        <div class="timeline-carousel_item">
+                            <div class="timeline-carousel_image">
+                                <div class="media-wrapper">
+                                    <img src="./image/jonesClock.png">
+                                </div>
+                            </div>
+                            <div class="timeline-carousel_item-inner">
+                                <div class="nameBox">
+                                    <div class="workName">圓形時鐘</div>
+                                    <a href="https://codepen.io/fansunny/pen/xxvRmgv" class="seeMore2"
+                                        target="_blank">SEE MORE<div class="arrow ld ld-wander-h"> ▶ </div></a>
+                                </div>
+                                <div class="workDes">
+                                    一個 function 做一件事情，此小作品幫助我學會如何將複雜的功能拆成小功能。
+                                    <li>練習指針定位和旋轉的角度</li>
+                                    <li>練習抓取現在時間</li>
+                                    <li>試著將結果以時鐘的樣式呈現</li>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item-->
+                    </div>
+                </div>
+                <!--Timeline carousel-->
+            </div>
+        </div>
+        <!-- 作品們 -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+</body>
+
+<!-- 打字特效  -->
+<script>
+    const typedTextSpan = document.querySelector(".typedText");
+    const entering = document.querySelector(".entering");
+
+    const textArray = ["追求設計和邏輯的碰撞感", "從錯誤訊息中慢慢成長", "看功能跑得順，我人森也很順", "永遠都有新東西塞進我的腦袋"];
+    const typingDelay = 150;
+    const erasingDelay = 100;
+    const newTextDelay = 2000;
+    let textArrayIndex = 0;
+    let charIndex = 0;
+
+    // 打字
+    function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+            if (!entering.classList.contains("typing")) entering.classList.add("typing");
+            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(type, typingDelay);
+        }
+        else {
+            entering.classList.remove("typing");
+            setTimeout(erase, newTextDelay);
+        }
+    }
+
+    // 刪除
+    function erase() {
+        if (charIndex > 0) {
+            if (!entering.classList.contains("typing")) entering.classList.add("typing");
+            typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(erase, erasingDelay);
+        }
+        else {
+            entering.classList.remove("typing");
+            textArrayIndex++;
+            if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+            setTimeout(type, typingDelay + 1100);
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // 呼叫 type()，打字結束後自然會呼叫 erase()，兩個功能之間要有停頓會比較自然
+        if (textArray.length) setTimeout(type, newTextDelay + 250);
+        // type();
+        // erase();
+    });
+</script>
+<!-- 打字特效  -->
+
+<!-- 行動裝置版nav -->
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileNav = document.querySelector(".mobileNav");
+    const showNav = document.querySelector(".show");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("toggle"); //漢堡變叉叉
+        mobileNav.classList.toggle("show");
+    })
+</script>
+<!-- 行動裝置版nav -->
+
+<!-- 點擊header .navMenu ul li a 如果有 data-id 就會顯示對應的區塊 -->
+<script>
+    const logoBox = document.querySelector('.logoBox');
+    const navMenu = document.querySelector('.navMenu');
+    const bannerArea = document.querySelector('.bannerArea');
+    const aboutArea = document.querySelector('.aboutArea');
+    const worksArea = document.querySelector('.worksArea');
+
+    // 為 navMenu 添加事件監聽器
+    navMenu.addEventListener('click', (e) => {
+        handleMenuClick(e);
+    });
+
+    // 為 mobileNav 添加事件監聽器
+    mobileNav.addEventListener('click', (e) => {
+        handleMenuClick(e);
+    });
+
+    function handleMenuClick(e) {
+        const dataId = e.target.parentElement.getAttribute('data-id');
+        if (dataId === '0') {
+            aboutArea.classList.remove('hide');
+            bannerArea.classList.add('hide');
+            worksArea.classList.add('hide');
+            hamburger.classList.toggle("toggle");
+            mobileNav.classList.toggle("show");
+
+        } else if (dataId === '1') {
+            worksArea.classList.remove('hide');
+            bannerArea.classList.add('hide');
+            aboutArea.classList.add('hide');
+            hamburger.classList.toggle("toggle");
+            mobileNav.classList.toggle("show");
+
+        }
+    }
+
+    logoBox.addEventListener('click', (e) => {
+        // console.log("test");
+        aboutArea.classList.add('hide');
+        bannerArea.classList.remove('hide');
+        worksArea.classList.add('hide');
+    });
+</script>
+<!-- 點擊header .navMenu ul li a 如果有 data-id 就會顯示對應的區塊 -->
+
+<!-- banner -->
+<script>
+    const canvas = document.querySelector('.starryCanvas');
+    const ctx = canvas.getContext('2d');
+    const darkModeToggle = document.querySelector('.darkModeToggle');
+    const bannerTitle = document.querySelector('.title');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let isDarkMode = false;
+    let mouseX = 0;
+    let mouseY = 0;
+    const stars = []; //陣列儲存所有星星物件
+    const starCount = 100; //畫布上的星星數量為 200
+    const connectionDistance = 150;
+    const flashlightRadius = 200; //手電筒效果的半徑為 100 像素
+
+    //Star 類別的 constructor 函數創建每顆星星的初始屬性，包括隨機位置、大小、速度、閃爍速度和亮度
+    class Star {
+        constructor() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.size = Math.random() * 2 + 0.5;
+            this.speedX = Math.random() * 0.5 - 0.25;
+            this.speedY = Math.random() * 0.5 - 0.25;
+            this.twinkleSpeed = Math.random() * 0.05 + 0.01;
+            this.brightness = Math.random();
+        }
+
+        //update() 函數更新星星的位置和亮度，並處理邊界碰撞（當星星碰到畫布邊界時，將反向移動）。如果亮度超出範圍（0 到 1 之間），也會反向閃爍速度。
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.brightness += this.twinkleSpeed;
+
+            if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
+            if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
+            if (this.brightness > 1 || this.brightness < 0) this.twinkleSpeed = -this.twinkleSpeed;
+        }
+
+        //draw() 函數用來繪製星星
+        draw() {
+            const distToMouse = Math.hypot(this.x - mouseX, this.y - mouseY);
+            const flashlightEffect = Math.max(0, 1 - distToMouse / flashlightRadius);
+            const baseAlpha = isDarkMode ? this.brightness * 0.8 + 0.2 : this.brightness * 0.4 + 0.1;
+            const alpha = Math.min(1, baseAlpha + flashlightEffect);
+
+            ctx.fillStyle = isDarkMode ? `rgba(255, 255, 255, ${alpha})` : `rgba(100, 100, 100, ${alpha})`;
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size * (1 + flashlightEffect), 0, Math.PI * 2);
+            ctx.fill();
+        }
+    }
+
+    //init() 函數創建 200 顆星星並存儲在 stars 陣列中。
+    function init() {
+        for (let i = 0; i < starCount; i++) {
+            stars.push(new Star());
+        }
+    }
+
+    //drawFlashlight() 函數根據鼠標位置繪製手電筒效果，使用輻射漸層來模擬光圈的亮度漸變。
+    function drawFlashlight() {
+        const gradient = ctx.createRadialGradient(mouseX, mouseY, 0, mouseX, mouseY, flashlightRadius);
+        gradient.addColorStop(0, 'rgb(252, 222, 112, 0.2)');
+
+        ctx.fillStyle = gradient;
+        ctx.beginPath();
+        ctx.arc(mouseX, mouseY, flashlightRadius, 0, Math.PI * 2);
+        ctx.fill();
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (let i = 0; i < stars.length; i++) {
+            stars[i].update();
+            stars[i].draw();
+
+            for (let j = i + 1; j < stars.length; j++) {
+                const dx = stars[i].x - stars[j].x;
+                const dy = stars[i].y - stars[j].y;
+                const distance = Math.hypot(dx, dy);
+
+                if (distance < connectionDistance) {
+                    const averageX = (stars[i].x + stars[j].x) / 2;
+                    const averageY = (stars[i].y + stars[j].y) / 2;
+                    const distToMouse = Math.hypot(averageX - mouseX, averageY - mouseY);
+                    const flashlightEffect = Math.max(0, 1 - distToMouse / flashlightRadius);
+
+                    const baseAlpha = isDarkMode ?
+                        (1 - distance / connectionDistance) * 0.3 :
+                        (1 - distance / connectionDistance) * 0.15;
+                    const alpha = Math.min(1, baseAlpha + flashlightEffect * 0.5);
+
+                    ctx.strokeStyle = isDarkMode ? `rgba(255, 255, 255, ${alpha})` : `rgba(100, 100, 100, ${alpha})`;
+                    ctx.lineWidth = 0.5 + flashlightEffect;
+                    ctx.beginPath();
+                    ctx.moveTo(stars[i].x, stars[i].y);
+                    ctx.lineTo(stars[j].x, stars[j].y);
+                    ctx.stroke();
+                }
+            }
+        }
+
+        drawFlashlight();
+        requestAnimationFrame(animate);
+    }
+
+    function toggleDarkMode() {
+        isDarkMode = !isDarkMode;
+        canvas.style.backgroundColor = isDarkMode ? '#3C3D37' : '#f0f0f0';
+        bannerTitle.style.color = isDarkMode ? '#ccc' : '#3C3D37';
+    }
+
+    init();
+    animate();
+
+    darkModeToggle.addEventListener('click', toggleDarkMode);
+
+    canvas.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+</script>
+<!-- banner -->
+
+<!-- aboutMe -->
+<script>
+    // 為 #container > div 元素添加點擊事件
+    document.querySelectorAll('#container > div').forEach(function (div) {
+        div.addEventListener('click', function () {
+            const container = document.getElementById('container');
+            const aboutCata = div.querySelector('span'); // 找到當前 div 中的 <span>
+
+            if (container.className === div.id) {
+                container.className = '';
+                if (aboutCata) {
+                    aboutCata.style.display = ''; // 重新顯示 <span> 元素（如果被隱藏）
+                }
+            } else {
+                container.className = div.id;
+                if (aboutCata) {
+                    aboutCata.style.display = 'none'; // 隱藏 <span> 元素
+                }
+            }
+        });
+    });
+</script>
+<!-- aboutMe -->
+
+<!-- works 時間線點擊 -->
+<script>
+    // unslick寫進去最後在resize
+    var $timelineCarousel = $('[data-js="timeline-carousel"]');
+
+    $timelineCarousel.slick({
+        infinite: true,
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        speed: 1000,
+        cssEase: 'ease-in-out',
+        autoplaySpeed: 1000,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+
+        responsive: [
+            {
+                breakpoint: 1180,
+                settings: 'unslick',
+            },
+        ]
+    });
+
+    $(window).on('resize', function () {
+        $timelineCarousel.slick('resize');
+    }).resize();
+
+</script>
+<!-- works 時間線點擊 -->
+
+</html>
